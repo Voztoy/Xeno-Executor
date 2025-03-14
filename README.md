@@ -12,23 +12,24 @@
 
 ## Installation
 
-### 1. Clone the repository:
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/voztoy/auto_mint_batch_collect.git
    cd auto_mint_batch_collect
    ```
 
-### 2. Install the necessary packages:
+2. Install the necessary packages:
 
    ```bash
+   npm init -y
    npm install
    npm install ethers@5
    npm install xlsx
    npm install dotenv
    
    ```
-### 3.  Tham số data.xlsx
+3.  Tham số data.xlsx
 - Privatekey từ ô A2 trở xuống, có 0x
 - Địa chỉ ví ở ô B2 trở xuống
 - Contract mint ở ô C2 trở xuống
@@ -56,7 +57,7 @@ Trước khi chạy node cần lưu ý set node
    TO_ADDRESS=
    ```
 
-### 1. Sử dụng index_hash_results_batch.js để mint
+1. Sử dụng index_hash_results_batch.js để mint
 
 - Sau khi mint đẻ ra file results.xlxs chứa hash
 
@@ -73,7 +74,7 @@ Trước khi chạy node cần lưu ý set node
    => Chỉ áp dụng cho RC1155, node chỉ cần sử dụng privateky ở data.xlsx (rpc, contract, ví nhận cần thay trong node)
 
 
-### 2.  Sử dụng index_mint_transfer_all.js để mint
+2.  Sử dụng index_mint_transfer_all.js để mint
 
 Node này mint xong gửi nft/nfts ngay sau khi mint về ví nhận, với điều kiện rpc khoẻ
 
